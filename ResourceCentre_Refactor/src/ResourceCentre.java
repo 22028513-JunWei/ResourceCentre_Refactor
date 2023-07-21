@@ -252,8 +252,10 @@ public class ResourceCentre {
 		
 		for (int i = 0; i < camcorderList.size(); i++) {
 					
-			if (tag.equalsIgnoreCase(camcorderList.get(i).getAssetTag())				
-					&& camcorderList.get(i).getIsAvailable() == true) {
+			String assetTag = camcorderList.get(i).getAssetTag(); // JUN WEI
+			boolean availability = camcorderList.get(i).getIsAvailable(); // JUN WEI
+			if (tag.equalsIgnoreCase(assetTag)				
+					&& availability == true) {
 				
 				camcorderList.get(i).setIsAvailable(false);
 				camcorderList.get(i).setDueDate(dueDate);
@@ -286,8 +288,10 @@ public class ResourceCentre {
 		
 		for (int i = 0; i < chromebookList.size(); i++) {
 
-			if (tag.equalsIgnoreCase(chromebookList.get(i).getAssetTag())
-					&& chromebookList.get(i).getIsAvailable() == true) {
+			String assetTag = chromebookList.get(i).getAssetTag(); // JUN WEI
+			boolean availability = chromebookList.get(i).getIsAvailable(); //JUN WEI
+			if (tag.equalsIgnoreCase(assetTag)
+					&& availability == true) {
 				
 				chromebookList.get(i).setIsAvailable(false);
 				chromebookList.get(i).setDueDate(dueDate);
@@ -321,8 +325,10 @@ public class ResourceCentre {
 		
 		for (int i = 0; i < camcorderList.size(); i++) {
 
-			if (tag.equalsIgnoreCase(camcorderList.get(i).getAssetTag())
-					&& camcorderList.get(i).getIsAvailable() == false) {
+			boolean availability = camcorderList.get(i).getIsAvailable(); // JUN WEI
+			String assetTag = camcorderList.get(i).getAssetTag(); //JUN WEI
+			if (tag.equalsIgnoreCase(assetTag)
+					&& availability == false) {
 				camcorderList.get(i).setIsAvailable(true);
 				camcorderList.get(i).setDueDate("");
 				isReturned = true;
@@ -335,8 +341,8 @@ public class ResourceCentre {
 
 	public static void returnCamcorder(ArrayList<Camcorder> camcorderList) {
 		ResourceCentre.viewAllCamcorder(camcorderList);
-		String tag = Helper.readString("Enter asset tag > ");
-		Boolean isReturned = doReturnCamcorder(camcorderList, tag);
+		String tag = Helper.readString("Enter asset tag > "); 
+		Boolean isReturned = doReturnCamcorder(camcorderList, tag); 
 		
 		if (isReturned == false) {
 			System.out.println("Invalid asset tag");
@@ -353,8 +359,10 @@ public class ResourceCentre {
 		
 		for (int i = 0; i < chromebookList.size(); i++) {
 
-			if (tag.equalsIgnoreCase(chromebookList.get(i).getAssetTag())
-					&& chromebookList.get(i).getIsAvailable() == false) {
+			String assetTag = chromebookList.get(i).getAssetTag(); // JUNWEI
+			boolean availability = chromebookList.get(i).getIsAvailable(); // JUNWEI
+			if (tag.equalsIgnoreCase(assetTag)
+					&& availability == false) {
 				chromebookList.get(i).setIsAvailable(true);
 				chromebookList.get(i).setDueDate("");
 				isReturned = true;
