@@ -174,7 +174,7 @@ public class ResourceCentre {
 
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
 		String output = "";
-		// write your code here n
+		// write your code here NN
 		for (int i = 0; i < chromebookList.size(); i++) {
 
 			output += String.format("%-84s\n", chromebookList.get(i).toString());
