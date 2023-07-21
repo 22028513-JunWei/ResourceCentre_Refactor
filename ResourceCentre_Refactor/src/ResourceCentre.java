@@ -16,7 +16,7 @@ public class ResourceCentre {
 
 
 		ArrayList<Camcorder> camcorderList = new ArrayList<Camcorder>();
-		ArrayList<Chromebook> chromebookList = new ArrayList<Chromebook>();
+		ArrayList<Chromebook> chromebookList = new ArrayList<Chromebook>(); //hi
 
 
 		camcorderList.add(new Camcorder("CC001", "Sony HDR-CX405", 35));
