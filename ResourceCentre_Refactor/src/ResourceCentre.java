@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class ResourceCentre {
 
-
+//Amos Q6
 	private static final int ITEM_TYPE_CHROMEBOOK = 2;
 	private static final int ITEM_TYPE_CAMCORDER = 1;
 	private static final int OPTION_RETURN = 4;
@@ -16,7 +16,7 @@ public class ResourceCentre {
 
 
 		ArrayList<Camcorder> camcorderList = new ArrayList<Camcorder>();
-		ArrayList<Chromebook> chromebookList = new ArrayList<Chromebook>(); //hi
+		ArrayList<Chromebook> chromebookList = new ArrayList<Chromebook>(); 
 
 
 		camcorderList.add(new Camcorder("CC001", "Sony HDR-CX405", 35));
