@@ -44,7 +44,7 @@ public class ResourceCentre {
 			} else if (option == OPTION_ADD) {
 				// Add a new item
 				ResourceCentre.setHeader("ADD");	
-				// Done extract method (Qn 8)
+				// Done extract method (Qn 8) Richard & Surendar
 				itemTypeMenu();
 				
 				int itemType = Helper.readInt("Enter option to select item type > ");
@@ -72,7 +72,7 @@ public class ResourceCentre {
 			} else if (option == OPTION_LOAN) {
 				// Loan item
 				ResourceCentre.setHeader("LOAN");
-				// Done extract method (Qn 8)
+				// Done extract method (Qn 8) Richard & Surendar
 				itemTypeMenu();
 				
 				int itemType = Helper.readInt("Enter option to select item type > ");
@@ -92,7 +92,7 @@ public class ResourceCentre {
 			} else if (option == OPTION_RETURN) {
 				// Return item
 				ResourceCentre.setHeader("RETURN");		
-				// Done extract method (Qn 8)
+				// Done extract method (Qn 8) Richard & Surendar
 				itemTypeMenu();
 				
 				int itemType = Helper.readInt("Enter option to select item type > ");
